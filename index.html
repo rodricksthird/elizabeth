@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Elizabeth Rodricks</title>
+  <meta name="keywords" content="elizabeth rodricks web developer elizabeth front-end javascript photographer nyc jquery api">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="icon" type="image/png" href="img/favicon.png">
+
+
+	<link rel="stylesheet" href="css7/bootstrap.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/icofont.min.css">
+
+	<link rel="stylesheet" href="css/icofont.css">
+
+
+	<link rel="stylesheet" href="css7/style-rain.css">
+
+	<link rel="stylesheet" href="css7/responsive.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124182154-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-124182154-1');
+</script>
+
+</head>
+<body class="bg-img body-bg">
+	<div class="rain-area" data-background-image="" id="rainy-parent">
+		<img src="http://www.elizabethrodricks.com/img/TimesSquare.jpg" id="rainy-image" alt="">
+	</div>
+
+
+
+	<div class="preloader-wrap">
+		<div class="preloader">
+			<div class="loader">
+					<div class="circle">
+
+							<p>Made with</p>
+							<div style="color:red;font-size:30px;" class="heart">&#10084;</div>
+					</div>
+				 </div>
+		</div>
+	</div>
+
+
+
+	<div class="bg-img color-white main-container">
+
+		<header class="fixed fixed-top xs-no-positioning main-header">
+			<div class="container-fluid">
+				<div class="row clearfix">
+					<div class="pull-right clearfix col-xs-6 exs-full-width">
+						<div class="pull-right header-right">
+							<ul class="list-inline social-icons">
+								<li>
+									<a href="https://github.com/rodricksnyc" target="_blank"><i class="icofont icofont-social-github"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/new.yorker/" target="_blank"><i class="icofont icofont-social-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/elizabethrodricks" target="_blank"><i class="icofont icofont-social-linkedin"></i>
+									</a>
+								</li>
+								<!-- <li>
+									<a href="https://twitter.com/new_yorkher" target="_blank"><i class="icofont icofont-social-twitter"></i>
+									</a>
+								</li> -->
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-xs-6 exs-full-width">
+						<div class="logo">
+							<a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="fixed fixed-middle xs-no-positioning main-body">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="tab-container">
+
+							<ul class="pull-left rect-1 tab-controller tab-style-one xs-no-positioning" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+								</li>
+
+								<li role="presentation">
+									<a href="portfolio.html" role="tab">Portfolio</a>
+								</li>
+
+								<li role="presentation">
+									<a href="https://www.istockphoto.com/portfolio/ElizabethNYC" target="_blank">Photography</a>
+								</li>
+
+							</ul>
+
+							<div class="tab-content">
+
+
+								<div role="tabpanel" class="tab-pane fade in active text-center home-tab" id="home">
+									<div class="tab-heading">
+
+										<h1 class="primary-title">Elizabeth Rodricks</h1>
+										<p class="text-light">Web Developer & Photographer</p>
+									</div>
+
+									<div class="tab-body">
+										<div class="padding-big countdown-timer">
+											<input type="hidden" id="count-down-date" name="count-down-date" value="">
+											<h2 class="expired-text hidden"></h2>
+											<ul class="list-inline count-down-list" id="countdown-boxes">
+												<li class="gray-bg-1" id="years"><span class="years"></span><span></span></li>
+												<li class="gray-bg-1" id="months"><span class="months"></span><span></span></li>
+												<li class="gray-bg-1" id="days"><span class="days"></span><span></span></li>
+												<li class="gray-bg-1" id="hours"><span class="hours"></span><span></span></li>
+												<li class="gray-bg-1" id="minutes"><span class="minutes"></span><span></span></li>
+												<li class="gray-bg-1" id="seconds"><span class="seconds"></span><span></span></li>
+											</ul>
+										</div>
+
+
+									</div>
+								</div>
+
+								<div role="tabpanel" class="tab-pane fade text-center contact-tab" id="contact">
+									<div class="tab-heading">
+										<h1 class="primary-title"></h1>
+										<p class="text-light"></p>
+									</div>
+
+									<div class="tab-body">
+										<div class="pt-70 contact-form">
+											<form action='http://formspree.io/rodricksnyc@gmail.com' id='contact-form' method='post' name='contact-form'>
+
+		                    <div class='row form-group'>
+		                      <div class='col-xs-4'>
+		                        <input class='form-control' id='field1' name='name' placeholder='name' required='' type='text'>
+		                      </div>
+		                      <div class='col-xs-4'>
+		                        <input class='col-xs-4 form-control' id='field1' name='_replyto' placeholder='email' required='' type='email'>
+		                      </div>
+		                      <div class='col-xs-4'>
+		                        <input class='col-xs-4 form-control' id='field1' name='phone' placeholder='phone' required='' type='text'>
+		                        <input name='_next' type='hidden' value='#'>
+		                      </div>
+		                    </div>
+		                    <div class='form-group'>
+		                      <textarea class='form-control' id='field1' name='body' placeholder='message' required='' rows='6'></textarea>
+		                    </div>
+
+		                    <div class='pull-right'>
+		                      <input class='btn' type='submit' value='send'>
+		                    </div>
+		                  </form>
+										</div>
+									</div>
+								</div>
+
+								<div role="tabpanel" class="tab-pane fade about-tab" id="about">
+									<div class="tab-heading">
+										<h2 class="primary-title"></h2>
+									</div>
+
+									<div class="tab-body">
+									<p></p>
+
+										<a href="#" class="readmore-link" data-toggle="modal" data-target="#aboutus"><i class="icofont icofont-long-arrow-right"></i></a>
+									</div><!-- /end tab-body -->
+								</div>
+
+
+							</div><!-- /tab-content -->
+						</div>
+					</div><!-- /end col-md-12 -->
+				</div><!-- /end row -->
+			</div><!-- /end container-fluid -->
+		</div>
+
+		<footer class="fixed fixed-bottom xs-no-positioning main-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="footer-content">
+							<div class="pull-right footer-right">
+								<ul class="list-inline rect-2 footer-menu">
+									<li><a href="#" data-toggle="modal" data-target="#aboutme">About</a></li>
+
+									<li><a href="#" data-toggle="modal" data-target="#contactus">Contact</a></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+	</div>
+
+	<div class="modal fade" id="aboutus" tabindex="-1" role="dialog" aria-labelledby="aboutusLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+					<h3 class="text-center" id="aboutusLabel"></h3>
+				</div>
+
+				<div class="modal-body">
+								<p></p>
+				</div>
+
+				<div class="modal-footer">
+					<ul class="list-inline pull-left social-icons">
+						<li>
+							<a href="https://github.com/rodricksnyc" target="_blank"><i class="icofont icofont-social-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/new.yorker/" target="_blank"><i class="icofont icofont-social-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/elizabethrodricks" target="_blank"><i class="icofont icofont-social-linkedin"></i>
+							</a>
+						</li>
+						<!-- <li>
+							<a href="https://twitter.com/new_yorkher" target="_blank"><i class="icofont icofont-social-twitter"></i>
+							</a>
+						</li> -->
+					</ul>
+					<button type="button" class="btn" data-dismiss="modal"></button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="aboutme" tabindex="-1" role="dialog" aria-labelledby="aboutmeLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="text-center" id="aboutmeLabel">About Elizabeth!</h3>
+				</div>
+
+				<div class="modal-body">
+					<p style="font-size:16px;">Hello friend! I am glad you are here! I hope you will enjoy looking at my site as much I enjoyed building it! I have been a front-end web developer for two years now, and let me tell you, the journey to get here was not easy! After a multitude of unfulfilling jobs unrelated to tech (neither of my degrees were in Computer Science) over the course of 10 years, I decided to make a career change. I completed 2 different full-stack coding bootcamps, and now I have a job that I absolutely love and adore! I work as a front-end developer, and am hoping to become a full-stack engineer by 2021. I am also a photographer- I mainly shoot cityscapes and architecture. You can visit my <a href="https://www.instagram.com/new.yorker/" target="_blank">Instagram</a> to see all of my pictures, or view some I am selling on <a href="https://www.istockphoto.com/portfolio/ElizabethNYC" target="_blank">iStock by Getty</a>. Please visit my <a href="portfolio.html">portfolio</a> link to view my coding work. Enjoy!</p>
+
+				</div>
+
+				<div class="modal-footer">
+					<ul class="list-inline pull-left social-icons">
+						<li>
+							<a href="https://github.com/rodricksnyc" target="_blank"><i class="icofont icofont-social-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/new.yorker/" target="_blank"><i class="icofont icofont-social-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/elizabethrodricks" target="_blank"><i class="icofont icofont-social-linkedin"></i>
+							</a>
+						</li>
+						<!-- <li>
+							<a href="https://twitter.com/new_yorkher" target="_blank"><i class="icofont icofont-social-twitter"></i>
+							</a>
+						</li> -->
+					</ul>
+					<button type="button" class="btn" data-dismiss="modal">Close</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="privacyLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+					<h3 class="text-center" id="privacyLabel"></h3>
+				</div>
+				<div class="modal-body">
+						<p></p>
+				</div>
+
+				<div class="modal-footer">
+					<ul class="list-inline pull-left social-icons">
+						<li>
+							<a href="https://github.com/rodricksnyc" target="_blank"><i class="icofont icofont-social-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/new.yorker/" target="_blank"><i class="icofont icofont-social-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/elizabethrodricks" target="_blank"><i class="icofont icofont-social-linkedin"></i>
+							</a>
+						</li>
+						<!-- <li>
+							<a href="https://twitter.com/new_yorkher" target="_blank"><i class="icofont icofont-social-twitter"></i>
+							</a>
+						</li> -->
+					</ul>
+					<button type="button" class="btn" data-dismiss="modal"></button>
+				</div><!-- /end modal-footer -->
+
+			</div><!-- /end modal-content -->
+		</div><!-- /end modal-dialog -->
+	</div>
+
+	<div class="modal fade" id="contactus" tabindex="-1" role="dialog" aria-labelledby="contactusLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="text-center" id="contactusLabel">Contact Me!</h3>
+				</div>
+
+				<div class="modal-body">
+					<div class="padding-big text-center contact-form">
+				      <form action='http://formspree.io/rodricksnyc@gmail.com' id='contact-form' method='post' name='contact-form'>
+
+                    <div class='row form-group'>
+                      <div class='col-xs-4'>
+                        <input class='form-control' id='field1' name='name' placeholder='name' required='' type='text'>
+                      </div>
+                      <div class='col-xs-4'>
+                        <input class='col-xs-4 form-control' id='field1' name='_replyto' placeholder='email' required='' type='email'>
+                      </div>
+                      <div class='col-xs-4'>
+                        <input class='col-xs-4 form-control' id='field1' name='phone' placeholder='phone' required='' type='text'>
+                        <input name='_next' type='hidden' value='#'>
+                      </div>
+                    </div>
+                    <div class='form-group'>
+                      <textarea class='form-control' id='field1' name='body' placeholder='message' required='' rows='6'></textarea>
+                    </div>
+
+                    <div class='pull-right'>
+                      <input class='btn' type='submit' value='send'>
+                    </div>
+                  </form>
+					</div><!-- /end contact-form -->
+				</div>
+
+				<div class="modal-footer">
+					<ul class="list-inline pull-left social-icons">
+						<li>
+							<a href="https://github.com/rodricksnyc" target="_blank"><i class="icofont icofont-social-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/new.yorker/" target="_blank"><i class="icofont icofont-social-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/elizabethrodricks" target="_blank"><i class="icofont icofont-social-linkedin"></i>
+							</a>
+						</li>
+						<!-- <li>
+							<a href="https://twitter.com/new_yorkher" target="_blank"><i class="icofont icofont-social-twitter"></i>
+							</a>
+						</li> -->
+					</ul>
+					<button type="button" class="btn" data-dismiss="modal">Close</button>
+				</div><!-- /end modal-footer -->
+
+			</div><!-- /end modal-content -->
+		</div><!-- /end modal-dialog -->
+	</div>
+
+	<div class="modal fade" id="faq" tabindex="-1" role="dialog" aria-labelledby="faqLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+					<h3 class="text-center" id="faqLabel"></h3>
+				</div><!-- /end modal-header -->
+
+				<div class="modal-body">
+					<div class="panel-group" id="faqAccordion">
+						<!-- Single faq starts -->
+						<div class="panel panel-default">
+							<div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#q-0">
+								<h4 class="panel-title">
+									<a href="#" class="ing"></a>
+								</h4>
+							</div>
+							<div id="q-0" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<!-- <p>
+									</p> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#q-1">
+								<h4 class="panel-title">
+									<a href="#" class="ing"></a>
+								</h4>
+							</div>
+							<div id="q-1" class="panel-collapse collapse">
+								<div class="panel-body">
+									<p></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#q-3">
+								<h4 class="panel-title">
+									<a href="#" class="ing"></a>
+								</h4>
+							</div>
+							<div id="q-3" class="panel-collapse collapse">
+								<div class="panel-body">
+									<p></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#q-4">
+								<h4 class="panel-title">
+									<a href="#" class="ing"></a>
+								</h4>
+							</div>
+							<div id="q-4" class="panel-collapse collapse">
+								<div class="panel-body">
+									<p></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<ul class="list-inline pull-left social-icons">
+						<li>
+							<a href="https://github.com/rodricksnyc" target="_blank"><i class="icofont icofont-social-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/new.yorker/" target="_blank"><i class="icofont icofont-social-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/elizabethrodricks" target="_blank"><i class="icofont icofont-social-linkedin"></i>
+							</a>
+						</li>
+						<!-- <li>
+							<a href="https://twitter.com/new_yorkher" target="_blank"><i class="icofont icofont-social-twitter"></i>
+							</a>
+						</li> -->
+					</ul>
+					<button type="button" class="btn" data-dismiss="modal"></button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/rainyday.min.js"></script>
+
+
+	<script>
+
+	jQuery(window).on('load', function(){
+
+		// PRELOADER
+		jQuery(".preloader-wrap").fadeOut(1000);
+
+
+	});
+		function rain() {
+			var image = document.getElementById('rainy-image');
+			var parent = document.getElementById('rainy-parent');
+			image.onload = function() {
+				var engine = new RainyDay({
+					image: this,
+					parentElement: parent
+				});
+				engine.rain([ [3, 3, 0.88], [5, 5, 0.9], [6, 2, 1] ], 100);
+			};
+			image.crossOrigin = 'anonymous';
+			image.src = $("#rainy-image").attr("src");
+		}
+		window.addEventListener("load", rain, false);
+	</script>
+</body>
+</html>
