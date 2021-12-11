@@ -278,6 +278,10 @@ gtag('config', 'UA-124182154-1');
                         <script src="js5/lettering.min.js"></script>
                         <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
                         <script>
+                          
+                          if (location.protocol !== "https:") {
+                          location.protocol = "https:";
+                          }
                         var startIt2 = $('.moveThis');
                         var $tlt2 = $('.tlt2').textillate({
                           autoStart: false,
