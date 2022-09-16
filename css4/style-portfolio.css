@@ -410,8 +410,8 @@ nav ul li a:hover::after {
 .landing_wrapper {
 	height: auto;
 	padding: 6em 0em;
-	background-color: #131517;
-	background: fixed url(http://www.elizabethrodricks.com/img/dark-bg.jpg);
+	background-color: black;
+
 }
 
 .landing_image_wrapper {
@@ -1351,7 +1351,7 @@ textarea.input_control {
 
 
 footer {
-		 background: fixed url(http://www.elizabethrodricks.com/img/dark-bg.jpg);
+
 }
 
 .social {
