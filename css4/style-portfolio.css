@@ -1,6 +1,7 @@
 
 html, body {
 	background-color: black;
+	overflow-x:hidden
 }
 
 body {
@@ -14,6 +15,12 @@ body {
 	max-width: 1349px;
 	margin: 0 auto;
 }
+
+
+   .elizabeth-button a p{
+     color: #FF1C72 !important;
+   }
+  
 
 .noBottom {
 	margin-bottom:0em !important;
