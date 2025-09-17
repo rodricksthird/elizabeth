@@ -484,7 +484,7 @@ nav ul li a:hover::after {
 .elizabeth_button::after {
     position: absolute;
     content: "";
-    height: 2px;
+    height: 1px;
     width: 0%;
     bottom: 0;
     right: 0;
@@ -494,6 +494,7 @@ nav ul li a:hover::after {
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
+	opacity:.8
 }
 
 .elizabeth_button:hover::after {
